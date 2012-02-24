@@ -7,3 +7,10 @@ root {
         view = '*'
     }
 }
+root.'GlazedlistsGriffonAddon'.addon=true
+
+jx {
+    'groovy.swing.SwingXBuilder' {
+        view = '*'
+    }
+}
