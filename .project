@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-<<<<<<< HEAD
 	<name>jira-viewer3</name>
-=======
-	<name>jira-viewer2</name>
->>>>>>> afbe12010b23aa2e060f86c199dbb550deb0da55
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,10 +12,7 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
-<<<<<<< HEAD
-=======
 		<nature>org.eclipse.jdt.groovy.core.groovyNature</nature>
->>>>>>> afbe12010b23aa2e060f86c199dbb550deb0da55
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
 </projectDescription>
