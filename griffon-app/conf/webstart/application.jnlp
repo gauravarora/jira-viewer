@@ -25,7 +25,11 @@
 <!-- to create shortcuts, uncomment this
         <shortcut online="true">
             <desktop/>
+<<<<<<< HEAD
             <menu submenu="Jira-viewer3"/>
+=======
+            <menu submenu="Jira-viewer2"/>
+>>>>>>> afbe12010b23aa2e060f86c199dbb550deb0da55
         </shortcut>
         <offline-allowed/>
 -->

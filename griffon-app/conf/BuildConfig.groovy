@@ -146,6 +146,7 @@ griffon {
 
 deploy {
     application {
+<<<<<<< HEAD
         title = 'Jira-viewer3 0.1'
         vendor = System.properties['user.name']
         homepage = 'http://localhost/Jira-viewer3'
@@ -154,6 +155,16 @@ deploy {
             oneline  = 'Jira-viewer3 0.1'
             minimal  = 'Jira-viewer3 0.1'
             tooltip  = 'Jira-viewer3 0.1'
+=======
+        title = 'Jira-viewer2 0.1'
+        vendor = System.properties['user.name']
+        homepage = 'http://localhost/Jira-viewer2'
+        description {
+            complete = 'Jira-viewer2 0.1'
+            oneline  = 'Jira-viewer2 0.1'
+            minimal  = 'Jira-viewer2 0.1'
+            tooltip  = 'Jira-viewer2 0.1'
+>>>>>>> afbe12010b23aa2e060f86c199dbb550deb0da55
         }
         icon {
             fallback {
@@ -182,4 +193,8 @@ deploy {
 
 app.archetype = 'default'
 app.fileType = '.groovy'
+<<<<<<< HEAD
 app.defaultPackageName = 'jira.viewer3'
+=======
+app.defaultPackageName = 'jira.viewer2'
+>>>>>>> afbe12010b23aa2e060f86c199dbb550deb0da55
