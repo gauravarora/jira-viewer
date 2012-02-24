@@ -43,9 +43,22 @@ class JiraViewer3Controller {
 			m << r.summary
 		}
 
+		def max = 0
 		map.each { k, v ->
 			println k
+			if (v.size > max) {
+				max = v.size
+			}
 			v.each { println it }
+		}
+		println "max is " + max
+		for (int i = 0; i < max; i++) {
+			def m = [:]
+			map.each { k, v ->
+				m.put(k, v[i])
+			}
+			println "m is " + m
+			model.settings << m
 		}
 	}
 }
