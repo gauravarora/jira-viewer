@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Auto generated on Mon Feb 27 22:42:13 IST 2012 -->
+<!-- Auto generated on Tue Feb 28 01:28:25 IST 2012 -->
 <classpath>
     <!-- source paths -->
     <classpathentry kind="src" path="griffon-app/conf" />
@@ -29,11 +29,11 @@
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.swinglabs\multiplegradientpaint\jars\multiplegradientpaint-1.0.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.swinglabs\swing-worker\jars\swing-worker-1.1.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\net.java.dev.timingframework\timingframework\jars\timingframework-1.0.jar" />
+    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-airbag-addon\jars\griffon-airbag-addon-0.1.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-glazedlists-addon\jars\griffon-glazedlists-addon-0.8.3.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-jxlayer-addon\jars\griffon-jxlayer-addon-0.2.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-jbusycomponent-addon\jars\griffon-jbusycomponent-addon-0.5.2.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-tangoicons-addon\jars\griffon-tangoicons-addon-0.2.jar" />
-    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-airbag-addon\jars\griffon-airbag-addon-0.1.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\log4j\log4j\jars\log4j-1.2.16.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.6.1.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.6.1.jar" />
