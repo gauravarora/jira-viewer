@@ -1,10 +1,11 @@
 package jira.viewer3
 
 actions {
-	action(id: 'act', name: 'Open HTML file..', closure: controller.act, mnemonic: 'O', accelerator: shortcut('O'))
+	action(id: 'login', name: 'Login', closure: controller.login, mnemonic: 'L', accelerator: shortcut('L'))
+	action(id: 'act', name: 'Fetch', closure: controller.act, mnemonic: 'F', accelerator: shortcut('F'))
 }
 application(title: 'jira-viewer3',
-		preferredSize: [320, 240],
+		preferredSize: [6400, 560],
 		pack: true,
 		//location: [50,50],
 		locationByPlatform:true,
@@ -15,13 +16,27 @@ application(title: 'jira-viewer3',
 			imageIcon('/griffon-icon-16x16.png').image
 		]) {
 			panel() {
-				button(act)
+				boxLayout(axis:BoxLayout.Y_AXIS)
+				panel() {
+					label('Username: ')
+					textField(columns: 10, text: bind('username', target: model, id: 'userbinding'))
+					label('Password: ')
+					passwordField(columns: 10, text: bind('password', target: model, id: 'passbinding'))
+					button(login)
+//					label('Token: ')
+//					textField(columns: 10, text: bind('loginToken', target: model, id: 'tokenbinding'))
+				}
+				panel() {
+					label('Query: ') 
+					textField(columns: 50, text: bind('query', target: model, id: 'querybinding'))
+					button(act)
+				}
 				scrollPane() {
-					jxtable(id: 'settingsTable', autoResizeMode: JTable.AUTO_RESIZE_SUBSEQUENT_COLUMNS, autoCreateRowSorter: false, rowSorter: null, preferredScrollableViewportSize:[1000, 200]) {
+					jxtable(id: 'settingsTable', autoResizeMode: JTable.AUTO_RESIZE_SUBSEQUENT_COLUMNS, autoCreateRowSorter: false, rowSorter: null) {
 						tableFormat = defaultTableFormat(columnNames: model.columns)
 						eventTableModel(source: model.settings, format: tableFormat)
 					}
 				}
-			}
 
+			}
 		}

@@ -10,4 +10,16 @@ class JiraViewer3Model {
 	EventList settings = new BasicEventList(100)
 	
 	def columns = ['0', '0.5', '1', '2', '3', '5', '8', '13']
+	
+	@Bindable
+	def username;
+	
+	@Bindable
+	def password;
+	
+	@Bindable
+	def query;
+	
+	@Bindable
+	def loginToken;
 }

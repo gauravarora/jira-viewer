@@ -6,30 +6,40 @@ class JiraViewer3Controller {
 	// these will be injected by Griffon
 	def model
 	def view
+	def server = 'http://jira.iontrading.com' // like http://xxxx:port
+
+	def url = "${server}/rpc/soap/jirasoapservice-v2"
+	def storypointId = 'customfield_11573'
+	def serviceLocator
+
+	void mvcGroupInit(Map args) {
+		serviceLocator = new JiraSoapServiceServiceLocator()
+		serviceLocator.setJirasoapserviceV2EndpointAddress(url)
+		serviceLocator.setMaintainSession(true)
+	}
+
+	def login = { evt = null ->
+		println "JIRA soap url: ${url}"
+
+		def service = serviceLocator.getJirasoapserviceV2()
+		model.loginToken = service.login(model.username, model.password)
+		println "Login token - " + model.loginToken
+	}
 
 	def act = { evt = null ->
-		def server = 'http://jira.iontrading.com' // like http://xxxx:port
-		def user = 'garora'	// like automation
-		def password = 'gaurav' // like automation
-		def storypointId = 'customfield_11573'
-		def filename = 'all.csv'
-
-		def url = "${server}/rpc/soap/jirasoapservice-v2"
+		def user = model.username
+		def password = model.password
+		def service = serviceLocator.getJirasoapserviceV2()
 
 		println "JIRA soap url: ${url}"
 
-		def serviceLocator = new JiraSoapServiceServiceLocator()
-		serviceLocator.setJirasoapserviceV2EndpointAddress(url)
-		serviceLocator.setMaintainSession(true)
-
-		def service = serviceLocator.getJirasoapserviceV2()
-		def token = service.login(user, password)
-
-		def info = service.getServerInfo(token)
+		def info = service.getServerInfo(model.loginToken)
 		println "JIRA version: ${info.getVersion()}"  // just verifies things are working
 
 		//def issues = service.getIssuesFromJqlSearch(token, "project = BOREENG AND status = Open AND \"Story Points\" >= 1 ORDER BY priority DESC",10)
-		def issues = service.getIssuesFromJqlSearch(token, "project = BOREENG AND status = Open AND \"Story Points\" >= 0 ORDER BY priority DESC",20)
+		//project = BOREENG AND status = Open AND \"Story Points\" >= 0 ORDER BY priority DESC
+		def issues = service.getIssuesFromJqlSearch(model.loginToken, model.query,20)
+
 		def map = [:]
 		issues.each { r->
 			def splist = r.customFieldValues.findAll{it.customfieldId.equals(storypointId)}.collect {it.values }
