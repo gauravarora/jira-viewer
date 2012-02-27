@@ -25,7 +25,7 @@ class JiraViewer3Controller {
 		model.loginToken = service.login(model.username, model.password)
 		println "Login token - " + model.loginToken
 	}
-	
+
 	def logout = {
 		println "JIRA soap url: ${url}"
 
@@ -35,12 +35,12 @@ class JiraViewer3Controller {
 	}
 
 	def act = { evt = null ->
+		model.busy = true
+
 		login()
 		def user = model.username
 		def password = model.password
 		def service = serviceLocator.getJirasoapserviceV2()
-
-		println "JIRA soap url: ${url}"
 
 		def info = service.getServerInfo(model.loginToken)
 		println "JIRA version: ${info.getVersion()}"  // just verifies things are working
@@ -79,5 +79,6 @@ class JiraViewer3Controller {
 			println "m is " + m
 			model.settings << m
 		}
+		model.busy = false
 	}
 }

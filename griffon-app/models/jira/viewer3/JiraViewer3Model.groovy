@@ -22,4 +22,10 @@ class JiraViewer3Model {
 	
 	@Bindable
 	def loginToken;
+	
+	@Bindable
+	def busy
+	
+	@Bindable
+	def busyDesc
 }
