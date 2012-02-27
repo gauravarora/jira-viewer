@@ -46,7 +46,7 @@ class JiraViewer3Controller {
 		println "JIRA version: ${info.getVersion()}"  // just verifies things are working
 
 		//def issues = service.getIssuesFromJqlSearch(token, "project = BOREENG AND status = Open AND \"Story Points\" >= 1 ORDER BY priority DESC",10)
-		//project = BOREENG AND status = Open AND \"Story Points\" >= 0 ORDER BY priority DESC
+		//project = BOREENG AND status = Open AND "Story Points" >= 0 ORDER BY priority DESC
 		def issues = service.getIssuesFromJqlSearch(model.loginToken, model.query,20)
 
 		def map = [:]
