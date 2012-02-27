@@ -16,3 +16,7 @@ jx {
 }
 
 root.'TangoiconsGriffonAddon'.addon=true
+
+root.'JxlayerGriffonAddon'.addon=true
+
+root.'JbusyComponentGriffonAddon'.addon=true
