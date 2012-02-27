@@ -18,15 +18,24 @@ class JiraViewer3Controller {
 		serviceLocator.setMaintainSession(true)
 	}
 
-	def login = { evt = null ->
+	def login = {
 		println "JIRA soap url: ${url}"
 
 		def service = serviceLocator.getJirasoapserviceV2()
 		model.loginToken = service.login(model.username, model.password)
 		println "Login token - " + model.loginToken
 	}
+	
+	def logout = {
+		println "JIRA soap url: ${url}"
+
+		def service = serviceLocator.getJirasoapserviceV2()
+		model.loginToken = service.logout(model.loginToken)
+		println "Logged out"
+	}
 
 	def act = { evt = null ->
+		login()
 		def user = model.username
 		def password = model.password
 		def service = serviceLocator.getJirasoapserviceV2()

@@ -14,3 +14,5 @@ jx {
         view = '*'
     }
 }
+
+root.'TangoiconsGriffonAddon'.addon=true
