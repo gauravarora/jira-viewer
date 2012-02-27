@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Auto generated on Mon Feb 27 22:32:00 IST 2012 -->
+<!-- Auto generated on Mon Feb 27 22:42:13 IST 2012 -->
 <classpath>
     <!-- source paths -->
     <classpathentry kind="src" path="griffon-app/conf" />
@@ -20,6 +20,9 @@
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon\griffon-rt\jars\griffon-rt-0.9.4.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.6.1.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\net.java.dev.glazedlists\glazedlists_java15\jars\glazedlists_java15-1.8.0.jar" />
+    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.divxdede\jbusycomponent\jars\jbusycomponent-1.2.1.jar" />
+    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.divxdede\commons\jars\commons-0.2.jar" />
+    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.swinglabs\jxlayer\jars\jxlayer-3.0.4.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon\swingxbuilder\jars\swingxbuilder-0.1.8.1.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.swinglabs\swingx-core\jars\swingx-core-1.6.2-2.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.swinglabs\swingx-beaninfo\jars\swingx-beaninfo-1.6.2-2.jar" />
@@ -27,12 +30,10 @@
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.swinglabs\swing-worker\jars\swing-worker-1.1.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\net.java.dev.timingframework\timingframework\jars\timingframework-1.0.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-glazedlists-addon\jars\griffon-glazedlists-addon-0.8.3.jar" />
-    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.swinglabs\jxlayer\jars\jxlayer-3.0.4.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-jxlayer-addon\jars\griffon-jxlayer-addon-0.2.jar" />
-    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-tangoicons-addon\jars\griffon-tangoicons-addon-0.2.jar" />
-    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.divxdede\jbusycomponent\jars\jbusycomponent-1.2.1.jar" />
-    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.divxdede\commons\jars\commons-0.2.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-jbusycomponent-addon\jars\griffon-jbusycomponent-addon-0.5.2.jar" />
+    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-tangoicons-addon\jars\griffon-tangoicons-addon-0.2.jar" />
+    <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.codehaus.griffon.plugins\griffon-airbag-addon\jars\griffon-airbag-addon-0.1.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\log4j\log4j\jars\log4j-1.2.16.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.slf4j\slf4j-log4j12\jars\slf4j-log4j12-1.6.1.jar" />
     <classpathentry kind="var" path="USER_HOME\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.6.1.jar" />
