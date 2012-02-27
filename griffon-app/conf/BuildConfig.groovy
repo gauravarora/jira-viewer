@@ -24,9 +24,9 @@ environments {
     production {
         signingkey {
             params {
-                sigfile = 'GRIFFON'
-                keystore = 'CHANGE ME'
-                alias = 'CHANGE ME'
+                sigfile = 'SIGNATURE'
+                keystore = 'Hmpf'
+                alias = 'Hompf'
                 // NOTE: for production keys it is more secure to rely on key prompting
                 // no value means we will prompt //storepass = 'BadStorePassword'
                 // no value means we will prompt //keypass   = 'BadKeyPassword'
@@ -36,12 +36,12 @@ environments {
 
         griffon {
             jars {
-                sign = true
-                pack = true
+                sign = false
+                pack = false
                 destDir = "${basedir}/staging"
             }
             webstart {
-                codebase = 'CHANGE ME'
+                codebase = 'Hmpf'
             }
         }
     }
@@ -146,14 +146,14 @@ griffon {
 
 deploy {
     application {
-        title = 'Jira-viewer3 0.1'
+        title = 'Jira-viewer 0.1'
         vendor = System.properties['user.name']
         homepage = 'http://localhost/Jira-viewer3'
         description {
-            complete = 'Jira-viewer3 0.1'
-            oneline  = 'Jira-viewer3 0.1'
-            minimal  = 'Jira-viewer3 0.1'
-            tooltip  = 'Jira-viewer3 0.1'
+            complete = 'Jira-viewer 0.1'
+            oneline  = 'Jira-viewer 0.1'
+            minimal  = 'Jira-viewer 0.1'
+            tooltip  = 'Jira-viewer 0.1'
         }
         icon {
             fallback {

@@ -12,12 +12,7 @@ application(title: 'jira-viewer3',
 		pack: true,
 		//location: [50,50],
 		locationByPlatform:true,
-		iconImage: imageIcon('/griffon-icon-48x48.png').image,
-		iconImages: [
-			imageIcon('/griffon-icon-48x48.png').image,
-			imageIcon('/griffon-icon-32x32.png').image,
-			imageIcon('/griffon-icon-16x16.png').image
-		]) {
+		iconImage: tangoIcon('go-home').image) {
 			busyComponent(id: "c1", busy: bind{model.busy}) {
 				busyModel(description: "Executing query")
 				panel() {
